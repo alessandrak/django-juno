@@ -97,7 +97,9 @@ class JunoProvider:
             }
         }
         response = requests.post(url, json=data, headers=self.headers)
-        return response
+        if response.status_code == 200:
+            return response.content
+        raise Exception(response.text)
 
     def list_webhooks(self):
         url = '%s/notifications/webhooks' % self.resource_server
