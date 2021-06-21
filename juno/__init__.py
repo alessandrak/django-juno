@@ -58,7 +58,7 @@ class JunoProvider:
             'charge': {
                 'description': description,
                 'amount': amount,
-                'paymentTypes': ['CREDIT_CARD'],
+                'paymentTypes': ['CREDIT_CARD', 'BOLETO'],
             },
             'billing': {
                 'name': name,
