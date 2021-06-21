@@ -57,7 +57,7 @@ Cria uma cobrança a partir dos dados recebidos.
 
 ### Pagar cobrança
 
-#### `juno_provider.create_charge(charge_id, credit_card, credit_card_type, street, number, city, state, post_code, **kwargs)`
+#### `juno_provider.create_charge(charge_id, credit_card, credit_card_type, street, number, city, state, postcode, **kwargs)`
 Paga uma cobrança existente.
 
 **Parâmetros**:

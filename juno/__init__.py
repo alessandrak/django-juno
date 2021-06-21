@@ -74,7 +74,7 @@ class JunoProvider:
             return response.content
         raise Exception(response.text)
 
-    def pay_charge(self, charge_id, credit_card, credit_card_type, street, number, city, state, postCode, **kwargs):
+    def pay_charge(self, charge_id, credit_card, credit_card_type, street, number, city, state, postcode, **kwargs):
         url = '%s/payments/' % self.resource_server
         if credit_card_type == 'ID':
             credit_card_details = {'creditCardId': credit_card}
@@ -89,7 +89,7 @@ class JunoProvider:
                     'number': number,
                     'city': city,
                     'state': state,
-                    'postCode': postCode,
+                    'postCode': postcode,
                 }
             },
             'creditCardDetails': {
