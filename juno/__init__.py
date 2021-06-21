@@ -92,9 +92,7 @@ class JunoProvider:
                     'postCode': postcode,
                 }
             },
-            'creditCardDetails': {
-                'creditCardId': credit_card_details
-            }
+            'creditCardDetails': credit_card_details
         }
         response = requests.post(url, json=data, headers=self.headers)
         if response.status_code == 200:

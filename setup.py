@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='django-juno',
-    version='0.0.8',
+    version='0.0.9',
     author='Alessandra Carneiro',
     author_email='alessandra@rd2.ventures',
     description='Integração da Juno com Django',
